@@ -1,0 +1,183 @@
+.app {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav button {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+nav button.active {
+  background-color: #646cff;
+}
+
+nav button:hover {
+  background-color: #535bf2;
+}
+
+main {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 2rem;
+  min-height: 500px;
+}
+
+.card-selector {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 0.5rem;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.card-button {
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  min-width: 50px;
+}
+
+.card-button.selected {
+  background-color: #646cff;
+  border-color: #535bf2;
+}
+
+.position-selector,
+.stack-input,
+.stage-selector {
+  margin: 1.5rem 0;
+}
+
+.position-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 0.5rem;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.recommendation {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.recommendation h3 {
+  color: #646cff;
+  margin-bottom: 1rem;
+}
+
+.recommendation-action {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.recommendation-action.fold {
+  background-color: #dc3545;
+  color: white;
+}
+
+.recommendation-action.call {
+  background-color: #ffc107;
+  color: black;
+}
+
+.recommendation-action.raise {
+  background-color: #28a745;
+  color: white;
+}
+
+.recommendation-details {
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+
+.input-group {
+  margin: 1rem 0;
+  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 1rem;
+}
+
+.calculator-grid {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+@media (prefers-color-scheme: light) {
+  .app {
+    color: #213547;
+  }
+  
+  main {
+    background-color: #f5f5f5;
+  }
+  
+  nav button {
+    background-color: #e0e0e0;
+    color: #213547;
+  }
+  
+  nav button.active {
+    background-color: #646cff;
+    color: white;
+  }
+  
+  .recommendation {
+    background-color: #e8e8e8;
+  }
+  
+  .input-group input,
+  .input-group select {
+    background-color: white;
+    color: #213547;
+    border-color: #ccc;
+  }
+}
