@@ -11,10 +11,10 @@ type Tab = 'analyzer' | 'pushfold' | 'icm' | 'tracker' | 'aicoach' | 'settings'
 
 function App() {
   const [activeTab, setActiveTab] = useState<Tab>('analyzer')
-  const [apiKeyConfigured, setApiKeyConfigured] = useState<boolean>(false)
 
   const handleApiKeyChange = () => {
-    setApiKeyConfigured(prev => !prev)
+    // Force re-render when API key changes
+    setActiveTab(prev => prev)
   }
 
   return (

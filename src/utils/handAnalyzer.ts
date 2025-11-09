@@ -33,7 +33,6 @@ export function analyzeHand(
   
   // Tournament stage considerations
   const isBubble = stage === 'Bubble'
-  const isEarly = stage === 'Early'
   
   // Analyze based on position and hand strength
   if (isPremium) {

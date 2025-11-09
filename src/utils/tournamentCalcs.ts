@@ -20,7 +20,7 @@ export function calculateICM(players: Player[], prizePool: number[]): number[] {
   
   // Simplified ICM - proportional to stack size weighted by position
   // Real ICM is more complex and requires iterative calculation
-  return players.map((player, idx) => {
+  return players.map((player) => {
     const chipPercentage = player.stack / totalChips
     
     // Weight by potential finishing positions
@@ -77,7 +77,7 @@ export function calculateRequiredEquity(potOdds: number): number {
 // Bubble factor - adjust strategy near money bubble
 export function calculateBubbleFactor(
   position: number, // current position in tournament
-  totalPlayers: number,
+  _totalPlayers: number,
   paidPlaces: number,
   stackBB: number
 ): number {
